@@ -46,13 +46,7 @@ spantwo.addEventListener("click",function(){
         li.style.backgroundColor="#F0F0F2"
         })
    })
-
    
 })
-
-
-
-
-
 
 }
