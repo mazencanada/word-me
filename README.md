@@ -8,10 +8,9 @@ Requirement :
 <li>Button when clicked  generating a list of words</li>
 <li>In the List of words each word displayed as a card </li>
 <li>Words should be translated to arabic </li>
-
+<li>Another list for ( words to learn )</li>
+<li>User able to add words from the generated list of words to learning list </li>
+<li>User able to delete words from the learning list </li>
+<li>The words generated should not be :Repeated</li>
 </ul>
-Another list for ( words to learn )
-User able to add words from the generated list of words to learning list 
-User able to delete words from the learning list 
-The words generated should not be :
-Repeated 
+ 
