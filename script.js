@@ -5,7 +5,7 @@ function generate(){
  let wordsGenerated=document.getElementById("words-generated");
  wordsGenerated.innerHTML=" "
 let input = document.getElementById("input-text").value;
- //split the input value words and return an array
+ //split the input into words and return an array
 let splitting=input.split(" ");
 console.log(splitting);
  //Remove Duplicate using Set
