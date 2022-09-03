@@ -43,7 +43,7 @@ spantwo.addEventListener("click",function(){
     })
     spanThree.addEventListener("click",function(){
         li.innerHTML=""
-        li.style.backgroundColor="#F0F0F2"
+        li.style.backgroundColor="#FFFFFF"
         })
    })
    
