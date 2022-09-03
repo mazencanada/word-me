@@ -35,7 +35,7 @@ spantwo.addEventListener("click",function(){
         let api=`https://api.mymemory.translated.net/get?q=${english}&langpair=en|ar-SA`
         fetch(api).then(res => res.json()).then(data => {
             arabic.innerText=data.responseData.translatedText;
-            li.style.height="150px"
+            li.style.height="80px"
             li.append(arabic)
         learnWords.append(li)
         });
