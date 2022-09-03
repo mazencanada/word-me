@@ -24,7 +24,7 @@ main{
     text-align: center;
     background-color: #B6AAFF;
     height: 300px;
-    color:#2A2D4E;
+    color:#FCFBFC;
     font-size: 20px;
     font-weight: 200;
 }
@@ -58,39 +58,47 @@ button{
     border-radius: 30px;
     border: none;
     margin-bottom: 0;
+    color: #7f70e2;
 }
 
 
 section{
     width: 100%;
     height: 400px;
-    background-color: #f0f0f2;
+    background-color: #ffffff;
     text-align: center;
-    border:0.5px #2A2D4E solid;
+    border: 0.1px #c093b7 solid;
 }
 h2{
-    font-weight: 500;
-    color: #2A2D4E;
+    font-weight: 600;
+    color: #B6A9FF;
+    text-shadow: 2px 2px #4d4d4d;
+
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+
 }   
 
 ul li {
-    background-color: #ffffff;
+    background-color: #B6A9FF;
     width: 170px;
     height: 50px;
     border-radius: 30px;
-    border: none;
     margin: 10px;
+    color: #FCFBFC;
 }
 li span{
     font-weight: 200;
     display: inline-block;
-    margin: 10px 10px 0 0;
-    padding: 5px 10px
+    margin: 5px 5px 0 5px;
+    padding: 5px 5px;
+
 }
 
+li span:last-child{
+    color: #FCFBFC;
+}
 
