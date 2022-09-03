@@ -101,4 +101,7 @@ li span{
 li span:last-child{
     color: #FCFBFC;
 }
+li span:last-child:hover{
+    color: rgb(157, 102, 196);
+}
 
