@@ -7,6 +7,7 @@ function generate(){
 let input = document.getElementById("input-text").value;
 let splitting=input.split(" ");
 console.log(splitting);
+ //Remove Duplicate
 let makeSet= new Set(splitting);
 let words=Array.from(makeSet);
 console.log(words);
@@ -21,6 +22,7 @@ spanOne.append(item.toUpperCase())
 spantwo.innerHTML='&nbsp <i class="fa-regular fa-heart"></i>'
 li.append(spanOne,spantwo)
 wordsGenerated.append(li)
+ //add generated words to WORDS list
 spantwo.addEventListener("click",function(){
     let learnWords= document.getElementById("learn-words");
     let li =document.createElement("li");
@@ -29,9 +31,12 @@ spantwo.addEventListener("click",function(){
     spantwo.innerHTML=""
     li.append(spanOne,spanThree)
     learnWords.append(li)
+ 
+ //add to NEW WORDS list icon 
     spanOne.addEventListener("click",function(){
         let arabic=document.createElement("span")
         let english =spanOne.innerText;
+     //Translation api
         let api=`https://api.mymemory.translated.net/get?q=${english}&langpair=en|ar-SA`
         fetch(api).then(res => res.json()).then(data => {
             arabic.innerText=data.responseData.translatedText;
@@ -41,6 +46,7 @@ spantwo.addEventListener("click",function(){
         });
         
     })
+ //delete icon
     spanThree.addEventListener("click",function(){
         li.innerHTML=""
         li.style.backgroundColor="#FFFFFF"
