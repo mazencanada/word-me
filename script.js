@@ -5,10 +5,12 @@ function generate(){
  let wordsGenerated=document.getElementById("words-generated");
  wordsGenerated.innerHTML=" "
 let input = document.getElementById("input-text").value;
+ //split the input value words and return an array
 let splitting=input.split(" ");
 console.log(splitting);
- //Remove Duplicate
+ //Remove Duplicate using Set
 let makeSet= new Set(splitting);
+ //create an array from the set
 let words=Array.from(makeSet);
 console.log(words);
 
