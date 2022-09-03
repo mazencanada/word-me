@@ -13,9 +13,7 @@ let makeSet= new Set(splitting);
  //create an array from the set
 let words=Array.from(makeSet);
 console.log(words);
-
-
-
+//loop through all the elements of the array using forEach and create list items and 2 spans for the word and icon 
 words.forEach(function(item){
 let li =document.createElement("li");
 let spanOne=document.createElement("span")
