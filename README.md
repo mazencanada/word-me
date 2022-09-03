@@ -2,7 +2,7 @@
 
 A small app that helps beginners to  learn new words from paragraphs or articles by generating the words and allowing the user to add the new words to his learning list.
 
-Requirement :
+Requirements :
 <ul>
 <li>User Insert a paragraph </li>
 <li>Button when clicked  generating a list of words</li>
