@@ -15,29 +15,33 @@
  
   nav{
     padding:3px 20px;
-    background-color: #FCFBFC;
-    color:#B6AAFF;
+    background-color: #6478FE;
+    color:#ffffff;
 }
 
 main{
     padding: 20px;
     text-align: center;
-    background-color: #B6AAFF;
-    height: 300px;
-    color:#FCFBFC;
+    background-color: #F3F6FE;
+    height: 350px;
+    color:rgb(40, 40, 40);
     font-size: 20px;
     font-weight: 200;
 }
+
+label{
+    font-weight: 300;
+}
 textarea{
+    background-color: #F3F6FE;
     padding: 30px 30px;
     width: 100%;
-    height: 150px;
-    color:white;
-    background-color:#B6AAFF;
+    height: 200px;
+    color:rgb(40, 40, 40);
     border: none;
     outline: none;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
 
@@ -52,27 +56,33 @@ input,button{
 
 button{
     margin-top: 10px;
-    background-color: #ffffff;
     width: 170px;
     height: 50px;
     border-radius: 30px;
     border: none;
     margin-bottom: 0;
-    color: #7f70e2;
+    color:white;
+    background-color:#6477FE ;
+}
+button:hover{
+    cursor: pointer;
+    color: #6477FE;
+    background-color: #ffffff;
 }
 
 
 section{
     width: 100%;
-    height: 400px;
-    background-color: #ffffff;
+    height: 450px;
     text-align: center;
-    border: 0.1px #c093b7 solid;
+    border-right: 1px #ffffff solid;
+    background-color: #6477FE;
 }
+
+
 h2{
-    font-weight: 600;
-    color: #B6A9FF;
-    text-shadow: 2px 2px #4d4d4d;
+    font-weight: 200;
+    color: #fffcfc;
 
 }
 
@@ -83,25 +93,25 @@ ul {
 }   
 
 ul li {
-    background-color: #B6A9FF;
+    background-color: #ffffff;
     width: 170px;
     height: 50px;
     border-radius: 30px;
     margin: 10px;
-    color: #FCFBFC;
+    color: #6477FE;
 }
 li span{
     font-weight: 200;
     display: inline-block;
-    margin: 5px 5px 0 5px;
-    padding: 5px 5px;
-
+    margin: 6px 5px 0 5px;
+    padding: 0 2px;
 }
 
-li span:last-child{
-    color: #FCFBFC;
-}
 li span:last-child:hover{
-    color: rgb(157, 102, 196);
+    color: #fc4b4b;
 }
 
+
+.column{
+    display: flex;
+}
