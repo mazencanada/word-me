@@ -22,16 +22,26 @@ spanOne.append(item.toUpperCase())
 spantwo.innerHTML='&nbsp <i class="fa-regular fa-heart"></i>'
 li.append(spanOne,spantwo)
 wordsGenerated.append(li)
+
  //add generated words to WORDS list
 spantwo.addEventListener("click",function(){
     let learnWords= document.getElementById("learn-words");
-    let li =document.createElement("li");
+    let liTwo =document.createElement("li");
     let spanThree=document.createElement("span")
     spanThree.innerHTML=' &nbsp <i class="fa-solid fa-trash"></i>'
     spantwo.innerHTML=""
-    li.append(spanOne,spanThree)
-    learnWords.append(li)
- 
+    liTwo.append(spanOne,spanThree)
+    learnWords.append(liTwo)
+    //remove first list items after adding to new words list 
+    li.style.backgroundColor="#FFFFFF";
+    //delete icon
+    spanThree.addEventListener("click",function(){
+      liTwo.innerHTML=""
+      liTwo.style.backgroundColor="#FFFFFF"
+      })
+
+})
+
  //add to NEW WORDS list icon 
     spanOne.addEventListener("click",function(){
         let arabic=document.createElement("span")
@@ -46,12 +56,8 @@ spantwo.addEventListener("click",function(){
         });
         
     })
- //delete icon
-    spanThree.addEventListener("click",function(){
-        li.innerHTML=""
-        li.style.backgroundColor="#FFFFFF"
-        })
-   })
+  
+
    
 })
 
