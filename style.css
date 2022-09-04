@@ -32,7 +32,6 @@ main{
 label{
     font-weight: 300;
     color: rgb(82, 81, 81);
-
 }
 textarea{
     background-color: #F3F6FE;
@@ -63,15 +62,15 @@ button{
     border-radius: 30px;
     border: none;
     margin-bottom: 0;
-    color:white;
-    background-color:#6477FE ;
+    color: rgb(255, 255, 255);
+    background-color: #dea45dc9;
     font-size: 16px;
-
 }
 button:hover{
     cursor: pointer;
-    color: #6477FE;
-    background-color: #ffffff;
+    color:white;
+    background-color: #e49f4b;
+    transition-duration: 0.6s;
 }
 
 
