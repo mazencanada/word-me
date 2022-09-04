@@ -63,14 +63,16 @@ button{
     border: none;
     margin-bottom: 0;
     color: rgb(255, 255, 255);
-    background-color: #dea45dc9;
+    background-color: #ff8181;
+
     font-size: 16px;
 }
 button:hover{
     cursor: pointer;
     color:white;
-    background-color: #e49f4b;
     transition-duration: 0.6s;
+    background-color: #ff7272;
+
 }
 
 
