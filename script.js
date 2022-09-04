@@ -32,31 +32,29 @@ spantwo.addEventListener("click",function(){
     spantwo.innerHTML=""
     liTwo.append(spanOne,spanThree)
     learnWords.append(liTwo)
-    //remove first list items after adding to new words list 
-    li.style.backgroundColor="#FFFFFF";
-    //delete icon
+    li.style.backgroundColor="#6477FE";
     spanThree.addEventListener("click",function(){
       liTwo.innerHTML=""
-      liTwo.style.backgroundColor="#FFFFFF"
+      liTwo.style.backgroundColor="#6477FE"
       })
+ //add to NEW WORDS list icon 
+ spanOne.addEventListener("click",function(){
+    let arabic=document.createElement("span")
+    let english =spanOne.innerText;
+ //Translation api
+    let api=`https://api.mymemory.translated.net/get?q=${english}&langpair=en|ar-SA`
+    fetch(api).then(res => res.json()).then(data => {
+        arabic.innerText=data.responseData.translatedText;
+        liTwo.style.height="80px"
+        liTwo.append(arabic)
+        arabic.style.display="block"
+    learnWords.append(liTwo)
+    });
+    
+})
 
 })
 
- //add to NEW WORDS list icon 
-    spanOne.addEventListener("click",function(){
-        let arabic=document.createElement("span")
-        let english =spanOne.innerText;
-     //Translation api
-        let api=`https://api.mymemory.translated.net/get?q=${english}&langpair=en|ar-SA`
-        fetch(api).then(res => res.json()).then(data => {
-            arabic.innerText=data.responseData.translatedText;
-            li.style.height="80px"
-            li.append(arabic)
-        learnWords.append(li)
-        });
-        
-    })
-  
 
    
 })
